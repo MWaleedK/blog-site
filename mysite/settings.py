@@ -15,7 +15,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 
-#Load the .env file's data
+# Load the .env file's data
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv("SECRET")
 DEBUG = True
 
 domain = os.getenv("PROJECT_DOMAIN")
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "vucanbin.pythonanywhere.com"]
 if domain:
     ALLOWED_HOSTS.append(f"{domain}.glitch.me")
 
