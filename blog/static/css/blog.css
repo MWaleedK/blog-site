@@ -79,5 +79,5 @@ h4 {
 }
 
 .plus_icon{
-    filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg);
+    filter: brightness(0) saturate(100%) invert(100%);
 }
