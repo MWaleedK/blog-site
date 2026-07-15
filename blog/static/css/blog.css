@@ -77,6 +77,20 @@ h4 {
     color: #C25100;
     background-color: white;
 }
+
+
+.btn-secondary.btn-inverted,
+.btn-secondary.btn-inverted:visited {
+    color: #C25100;
+    background-color: white;
+    border-color: #C25100;
+}
+
+.btn-secondary.btn-inverted:hover {
+    color: white;
+    background-color: #C25100;
+    border-color: #C25100;
+}
 .plus_icon{
     filter: brightness(0) saturate(100%) invert(100%);
 }
