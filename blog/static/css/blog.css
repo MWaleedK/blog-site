@@ -81,3 +81,13 @@ h4 {
 .plus_icon{
     filter: brightness(0) saturate(100%) invert(100%);
 }
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.delete-form {
+    display: inline-block;
+    margin: 0;
+}
