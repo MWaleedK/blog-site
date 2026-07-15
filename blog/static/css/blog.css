@@ -67,17 +67,16 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #C25100;
+    color: white;
     background: none;
-    border-color: #C25100;
+    border-color: white;
     margin-left: 15px;
 }
 
 .btn-secondary:hover {
-    color: #FFFFFF;
-    background-color: #C25100;
+    color: #C25100;
+    background-color: white;
 }
-
 .plus_icon{
     filter: brightness(0) saturate(100%) invert(100%);
 }
@@ -90,4 +89,25 @@ h4 {
 .delete-form {
     display: inline-block;
     margin: 0;
+}
+#logout {
+    font-family: 'Lobster', cursive;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+.actions2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+small a,
+small a:hover,
+small a:visited {
+    font-size: 15pt;
+    color: white;
+    text-decoration: none;
 }

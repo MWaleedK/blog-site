@@ -27,8 +27,22 @@
           />
         </a>
         <a href="{% url 'post_draft_list' %}" class="top-menu"
-          ><img src="{% static 'icons/pencil-square.svg'%}" class= "plus_icon"
+          ><img src="{% static 'icons/pencil-square.svg'%}" class="plus_icon"
         /></a>
+        <div id="logout" class="top-menu actions2">
+          Hello {{ user.username }}
+          <form action="{% url 'logout' %}" method="POST" class="logout-form">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-secondary">
+              <small>(Log out)</small>
+            </button>
+          </form>
+        </div>
+        {% else %}
+        <a href="{% url 'login' %}" class="top-menu"
+          ><img src="{% static 'icons/lock-fill.svg' %}"
+        /></a>
+
         {% endif %}
         <h1><a href="/">Django Girls Blog</a></h1>
       </div>
